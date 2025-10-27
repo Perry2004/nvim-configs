@@ -11,3 +11,7 @@
 vim.api.nvim_create_user_command("Home", function()
   require("snacks").dashboard.open()
 end, { desc = "Open LazyVim Dashboard (Home)" })
+
+vim.api.nvim_create_user_command("BufCloseAll", ":%bd", {
+  desc = "Close all listed buffers",
+})

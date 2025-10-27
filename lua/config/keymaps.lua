@@ -3,3 +3,6 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("n", "<leader>h", ":Home<CR>", { desc = "Back to welcome home page", silent = true })
+vim.keymap.set("n", "<leader>bc", "<cmd>BufCloseAll<CR>", {
+  desc = "Close All Buffers",
+})
