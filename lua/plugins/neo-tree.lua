@@ -1,3 +1,4 @@
+-- collapse directories when possible
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
