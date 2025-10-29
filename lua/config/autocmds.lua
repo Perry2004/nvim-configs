@@ -15,3 +15,10 @@ end, { desc = "Open LazyVim Dashboard (Home)" })
 vim.api.nvim_create_user_command("BufCloseAll", ":%bd", {
   desc = "Close all listed buffers",
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
